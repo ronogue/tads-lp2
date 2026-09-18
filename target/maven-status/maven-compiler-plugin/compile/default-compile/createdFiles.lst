@@ -1,0 +1,15 @@
+br/edu/ifsp/biblioteca/cli/CatalogoRunner.class
+br/edu/ifsp/biblioteca/repository/UsuarioRepositoryEmMemoria.class
+br/edu/ifsp/biblioteca/repository/LivroRepositoryJdbc.class
+br/edu/ifsp/biblioteca/repository/LivroRepositoryEmMemoria.class
+br/edu/ifsp/biblioteca/service/UsuarioService.class
+br/edu/ifsp/biblioteca/repository/ILivroRepository.class
+br/edu/ifsp/biblioteca/service/LivroService.class
+br/edu/ifsp/biblioteca/domain/Exemplar.class
+br/edu/ifsp/biblioteca/domain/Livro.class
+br/edu/ifsp/biblioteca/domain/EStatusExemplar.class
+br/edu/ifsp/biblioteca/exception/RegraDeNegocioException.class
+br/edu/ifsp/biblioteca/BibliotecaApplication.class
+br/edu/ifsp/biblioteca/domain/Usuario.class
+br/edu/ifsp/biblioteca/domain/Autor.class
+br/edu/ifsp/biblioteca/repository/IUsuarioRepository.class

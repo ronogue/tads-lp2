@@ -32,6 +32,8 @@ if [ "$PROXY_HOST" = "$PROXY_PORT" ] || [ -z "$PROXY_PORT" ]; then
     exit 1
 fi
 
+PROXY_PORT=${PROXY_PORT%/}
+
 mkdir -p "$M2_DIR"
 
 cat > "$SETTINGS_FILE" <<EOF

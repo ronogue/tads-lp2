@@ -7,23 +7,23 @@ import br.edu.ifsp.biblioteca.repository.LivroRepositoryEmMemoria;
 import br.edu.ifsp.biblioteca.repository.UsuarioRepositoryEmMemoria;
 import br.edu.ifsp.biblioteca.service.LivroService;
 import br.edu.ifsp.biblioteca.service.UsuarioService;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-public class CatalogoRunner {
+@Component
+public class CatalogoRunner implements CommandLineRunner {
 
     private final LivroService livroService;
     private final UsuarioService usuarioService;
 
-    public CatalogoRunner() {
-
-        this.livroService = new LivroService(
-            new LivroRepositoryEmMemoria()
-        );
-
-        this.usuarioService = new UsuarioService(
-            new UsuarioRepositoryEmMemoria()
-        );
+    public CatalogoRunner(
+        LivroService livroService,
+        UsuarioService usuarioService
+    ) {
+        this.livroService = livroService;
+        this.usuarioService = usuarioService;
     }
 
     public void run(String... args) {

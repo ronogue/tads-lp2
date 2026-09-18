@@ -1,0 +1,15 @@
+/home/estudante1/Documentos/tads-lp2/src/main/java/br/edu/ifsp/biblioteca/BibliotecaApplication.java
+/home/estudante1/Documentos/tads-lp2/src/main/java/br/edu/ifsp/biblioteca/cli/CatalogoRunner.java
+/home/estudante1/Documentos/tads-lp2/src/main/java/br/edu/ifsp/biblioteca/domain/Autor.java
+/home/estudante1/Documentos/tads-lp2/src/main/java/br/edu/ifsp/biblioteca/domain/EStatusExemplar.java
+/home/estudante1/Documentos/tads-lp2/src/main/java/br/edu/ifsp/biblioteca/domain/Exemplar.java
+/home/estudante1/Documentos/tads-lp2/src/main/java/br/edu/ifsp/biblioteca/domain/Livro.java
+/home/estudante1/Documentos/tads-lp2/src/main/java/br/edu/ifsp/biblioteca/domain/Usuario.java
+/home/estudante1/Documentos/tads-lp2/src/main/java/br/edu/ifsp/biblioteca/exception/RegraDeNegocioException.java
+/home/estudante1/Documentos/tads-lp2/src/main/java/br/edu/ifsp/biblioteca/repository/ILivroRepository.java
+/home/estudante1/Documentos/tads-lp2/src/main/java/br/edu/ifsp/biblioteca/repository/IUsuarioRepository.java
+/home/estudante1/Documentos/tads-lp2/src/main/java/br/edu/ifsp/biblioteca/repository/LivroRepositoryEmMemoria.java
+/home/estudante1/Documentos/tads-lp2/src/main/java/br/edu/ifsp/biblioteca/repository/LivroRepositoryJdbc.java
+/home/estudante1/Documentos/tads-lp2/src/main/java/br/edu/ifsp/biblioteca/repository/UsuarioRepositoryEmMemoria.java
+/home/estudante1/Documentos/tads-lp2/src/main/java/br/edu/ifsp/biblioteca/service/LivroService.java
+/home/estudante1/Documentos/tads-lp2/src/main/java/br/edu/ifsp/biblioteca/service/UsuarioService.java
