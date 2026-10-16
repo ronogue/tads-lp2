@@ -11,5 +11,6 @@
 /home/estudante1/Documentos/tads-lp2/src/main/java/br/edu/ifsp/biblioteca/repository/LivroRepositoryEmMemoria.java
 /home/estudante1/Documentos/tads-lp2/src/main/java/br/edu/ifsp/biblioteca/repository/LivroRepositoryJdbc.java
 /home/estudante1/Documentos/tads-lp2/src/main/java/br/edu/ifsp/biblioteca/repository/UsuarioRepositoryEmMemoria.java
+/home/estudante1/Documentos/tads-lp2/src/main/java/br/edu/ifsp/biblioteca/repository/UsuarioRepositoryJdbc.java
 /home/estudante1/Documentos/tads-lp2/src/main/java/br/edu/ifsp/biblioteca/service/LivroService.java
 /home/estudante1/Documentos/tads-lp2/src/main/java/br/edu/ifsp/biblioteca/service/UsuarioService.java

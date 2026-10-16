@@ -30,14 +30,22 @@ public class LivroRepositoryJdbc implements ILivroRepository {
         {
             conexao.setAutoCommit(false);
 
-            if (livro.getId() == null) {
-                this.inserirLivro(conexao, livro);
-            } else {
-                this.atualizarLivro(conexao, livro);
-            }
+            try {
+                if (livro.getId() == null) {
+                    this.inserirLivro(conexao, livro);
+                } else {
+                    this.atualizarLivro(conexao, livro);
+                }
 
-            this.salvarAutores(conexao, livro);
-            this.salvarExemplares(conexao, livro);
+                this.salvarAutores(conexao, livro);
+                this.salvarExemplares(conexao, livro);
+
+                conexao.commit();
+
+            } catch (SQLException erro) {
+                conexao.rollback();
+                throw erro;
+            }
 
         } catch (SQLException erro) {
             throw new IllegalStateException("Falha ao salvar o livro", erro);
@@ -71,7 +79,7 @@ public class LivroRepositoryJdbc implements ILivroRepository {
 
     private void atualizarLivro(Connection conexao, Livro livro) throws SQLException {
 
-        String sql = "UPDATE livro SET isbn = ?, titulo = ?, ano_publicao = ? WHERE id = ?";
+        String sql = "UPDATE livro SET isbn = ?, titulo = ?, ano_publicacao = ? WHERE id = ?";
 
 
         try (PreparedStatement  comando = conexao.prepareStatement(sql)) {
