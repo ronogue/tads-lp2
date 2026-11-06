@@ -34,7 +34,7 @@ public class LivroService {
         }
 
         Optional<Livro> livroJaCadastradoOptional = this.livroRepository
-            .buscarPorIsbn(livro.getIsbn());
+            .findByIsbn(livro.getIsbn());
 
         if (livroJaCadastradoOptional.isPresent()) {
             throw new RegraDeNegocioException(
@@ -42,7 +42,7 @@ public class LivroService {
             );
         }
 
-        Livro livroCadastrado = this.livroRepository.salvar(livro);
+        Livro livroCadastrado = this.livroRepository.save(livro);
 
         return livroCadastrado;
     }
