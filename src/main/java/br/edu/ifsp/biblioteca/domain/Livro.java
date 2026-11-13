@@ -30,6 +30,8 @@ public class Livro {
     )
     private List<Exemplar> listaDeExemplares = new ArrayList<>();
 
+    // ORM = Object Relational Mapping
+
     @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
     @JoinTable(
         name = "livro_autor",
