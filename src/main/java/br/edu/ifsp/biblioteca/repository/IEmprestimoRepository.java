@@ -16,7 +16,7 @@ public interface IEmprestimoRepository extends JpaRepository<Emprestimo, Long> {
      */
     List<Emprestimo> findByUsuarioIdAndDataDevolucaoIsNull(Long usuarioId);
 
-    long countByUsuarioIdAndDataDevolucaoIsNUll(Long usuarioId);
+    long countByUsuarioIdAndDataDevolucaoIsNull(Long usuarioId);
 
     List<Emprestimo> findByDataDevolucaoIsNullAndDataPrevistaDevolucaoBefore(LocalDate data);
 

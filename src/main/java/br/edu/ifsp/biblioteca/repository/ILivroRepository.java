@@ -43,5 +43,5 @@ public interface ILivroRepository extends JpaRepository<Livro, Long> {
         Pageable pagina
     );
 
-    List<Livro> buscarPorTitulo(String titulo);
+    // List<Livro> buscarPorTitulo(String titulo);
 }

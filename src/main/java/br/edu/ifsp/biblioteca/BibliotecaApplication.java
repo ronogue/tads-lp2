@@ -1,6 +1,5 @@
 package br.edu.ifsp.biblioteca;
 
-import br.edu.ifsp.biblioteca.cli.CatalogoRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
